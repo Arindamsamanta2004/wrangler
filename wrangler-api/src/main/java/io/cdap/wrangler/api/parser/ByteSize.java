@@ -1,6 +1,16 @@
 package io.cdap.wrangler.api.parser;
 
+/**
+ * Represents a byte size value with unit conversion capabilities.
+ * Supports units: B, KB, MB, GB, TB
+ * Uses 1024-based conversion (1 KB = 1024 B)
+ */
 public class ByteSize extends Token {
+    private static final long BYTES_PER_KB = 1024L;
+    private static final long BYTES_PER_MB = BYTES_PER_KB * 1024L;
+    private static final long BYTES_PER_GB = BYTES_PER_MB * 1024L;
+    private static final long BYTES_PER_TB = BYTES_PER_GB * 1024L;
+    
     private final long bytes;
     
     public ByteSize(String value) {
