@@ -1,0 +1,37 @@
+# Wrangler Enhancement Project - AI Assistance Log
+
+## Grammar Enhancement
+"Implementing ANTLR4 grammar modifications for ByteSize and TimeDuration tokens in Directives.g4. Need to ensure backward compatibility while adding support for standardized unit parsing (KB, MB, GB, TB for bytes; ms, s, m, h, d for time). Please review the lexer rule implementation."
+
+## API Design
+"Designing extensible token classes for byte size and time duration parsing. Looking to implement a robust parsing mechanism that handles edge cases and maintains consistent unit conversion standards (1024-based for bytes, SI units for time). Seeking feedback on the architecture."
+
+## Parser Implementation
+"Implementing visitor pattern for new ByteSize and TimeDuration tokens in the core parser. Need to ensure proper type safety and error handling while maintaining the existing TokenGroup structure. Any recommendations for optimizing the visitor implementation?"
+
+## Directive Development
+"Developing an aggregate-stats directive that handles both byte size and time duration calculations. Looking to implement efficient aggregation logic while maintaining memory efficiency for large datasets. Seeking input on best practices for handling concurrent aggregations."
+
+## Test Strategy
+"Developing comprehensive test suite for the new byte size and time duration functionality. Focus areas:
+- Edge case handling
+- Unit conversion accuracy
+- Performance with large datasets
+- Error condition handling
+Please review the test coverage strategy."
+
+## Documentation
+"Documenting new byte size and time duration parsing capabilities in README.md. Aiming to provide clear, concise examples while maintaining technical accuracy. Seeking feedback on documentation structure and completeness."
+
+## Code Review
+"Requesting review of error handling implementation in ByteSize and TimeDuration parsers. Particularly interested in edge cases and potential performance optimizations while maintaining code readability."
+
+## Performance Testing
+"Implementing performance benchmarks for large-scale data processing scenarios. Key considerations:
+- Memory efficiency with large datasets (100K+ rows)
+- Processing time optimization for aggregation operations
+- Resource utilization monitoring
+- Scalability testing methodology
+Seeking guidance on industry-standard approaches to performance validation in data processing pipelines."
+
+Note: These prompts were used iteratively during development to ensure robust implementation and comprehensive testing of the new features.
