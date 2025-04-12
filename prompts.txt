@@ -34,4 +34,20 @@ Please review the test coverage strategy."
 - Scalability testing methodology
 Seeking guidance on industry-standard approaches to performance validation in data processing pipelines."
 
+## Test Architecture Design
+"Designing a comprehensive test suite for data processing components with focus on:
+- Unit conversion validation across different scales (B to TB, ms to days)
+- Performance benchmarking with real-world data volumes
+- Edge case handling for boundary conditions
+- Precision testing for floating-point calculations
+- Error condition validation
+
+Key considerations:
+1. How do we ensure consistent behavior across different unit combinations?
+2. What are the performance implications of large-scale data processing?
+3. How can we maintain test readability while covering all edge cases?
+4. What are the appropriate tolerance levels for floating-point comparisons?
+
+Seeking input on test organization and coverage optimization while maintaining code clarity."
+
 Note: These prompts were used iteratively during development to ensure robust implementation and comprehensive testing of the new features.
